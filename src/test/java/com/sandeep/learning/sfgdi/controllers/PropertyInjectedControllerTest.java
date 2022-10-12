@@ -1,6 +1,6 @@
 package com.sandeep.learning.sfgdi.controllers;
 
-import com.sandeep.learning.sfgdi.services.GreetingServiceImpl;
+import com.sandeep.learning.sfgdi.services.PropertyInjectedGreetingServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -12,7 +12,7 @@ public class PropertyInjectedControllerTest {
     void setUp() {
         controller = new PropertyInjectedController();
 
-        controller.greetingService = new GreetingServiceImpl();
+        controller.greetingService = new PropertyInjectedGreetingServiceImpl();
     }
 
     @Test
